@@ -1,22 +1,97 @@
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: black;
+    background-color: #222;
     box-sizing: border-box;
 }
-.banner{
-    background-color: white;
+
+.banner {
+    background-color: #fff;
     width: 300px;
     height: 150px;
     border-radius: 10px;
     position: relative;
     text-align: center;
 }
-.pin{
+
+.pin {
     position: absolute;
     top: -150px;
     left: 45%;
-    color: 2=whitesmoke;
+    color: #fff;
+}
+
+.lines {
+    position: relative;
+    top: 150px;
+    background-color: #ccc;
+}
+
+.lines::before {
+    content: "";
+    display: block;
+    width: 158px;
+    height: 2px;
+    left: 7%;
+    background-color: #ddd;
+    position: absolute;
+    top: -220px;
+    transform: rotate(120deg);
+}
+
+.lines::after {
+    content: "";
+    display: block;
+    width: 158px;
+    height: 2px;
+    right: 13%;
+    background-color: #ddd;
+    position: absolute;
+    top: -220px;
+    transform: rotate(-120deg);
+}
+
+.banner:hover {
+    transform: rotate(-10deg)
+}
+
+.banner img {
+    width: 80px;
+    position: absolute;
+    right: -40px;
+    top: -50px;
+    transform: rotate(30deg);
+}
+
+.monsieur-la-doulaise-regular {
+    font-family: "Monsieur La Doulaise", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+.bitcount-prop-single {
+    font-family: "Bitcount Prop Single", system-ui;
+    font-optical-sizing: auto;
+    font-weight: <900>;
+    font-style: normal;
+}
+.closed h1{
+    width: 300px;
+    background-color: #ccc;
+    padding: 5px 0;
+    font font-family: sans-serif;
+}
+.closed h2{
+    background-color: #fff;
+    width: 300px;
+    font-size: 35px;
+    line-height: 0.02;
+    font-family: "Monsieur La Doulaise", cursive;
+}
+closed p{
+    font-size: 15px;
 }
